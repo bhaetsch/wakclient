@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="6.0+" codebase="http://files.techspread.de/wakclient" href="$outputFile">
+	<information>
+		<title>WAKClient</title>
+		<vendor>Patrick Gotthard</vendor>
+		<homepage href="http://www.techspread.de/wakclient" />
+		<description>Client-Programm zur Nutzung der WAK-Plattform</description>
+		<icon href="wakclient-logo.png" />
+		<icon kind="splash" href="wakclient-splash.png" />
+		<shortcut online="true">
+			<desktop />
+			<menu submenu="WAKClient" />
+		</shortcut>
+	</information>
+	<update check="always" policy="always" />
+	<security>
+		<all-permissions />
+	</security>
+	<resources>
+		<j2se version="1.6+" />
+		<property name="jnlp.versionEnabled" value="true" />
+		$dependencies
+	</resources>	
+	<application-desc main-class="$mainClass" />
+</jnlp>
