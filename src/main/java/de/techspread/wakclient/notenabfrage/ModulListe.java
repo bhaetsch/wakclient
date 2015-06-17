@@ -47,6 +47,9 @@ public class ModulListe extends ArrayList<Modul> {
 			String note1 = modul[3].replace(",", ".");
 			String note2 = modul[4].replace(",", ".");
 			String note3 = modul[5].replace(",", ".");
+			if (note1.equals("ext.")) {
+				note1 = "0.0";
+			}
 			if (note2.equals("-")) {
 				note2 = "0.0";
 				note3 = "0.0";
